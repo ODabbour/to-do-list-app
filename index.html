@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Olaa Dabbour - To-Do List</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+
+  <body>
+    <p class="title">To-Do List</p>
+    <button onclick="
+        clearList();
+      " class="clear-button">Clear</button>
+    <div class="todo-input-grid">
+      <input type="text" 
+        placeholder="To-do Item" 
+        class="js-name-input name-input" onkeydown="checkEnter(event)">
+
+      <input type="date" placeholder="Date"
+        class="js-due-date-input due-date-input">
+
+      <button class="add-todo-button js-add-todo-button">
+        <img src="images/add.png" alt="" class="add-image">
+      </button>
+    </div>
+
+    <div class="js-todo-list todo-grid"></div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
